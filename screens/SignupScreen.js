@@ -20,8 +20,8 @@ function SignupScreen() {
         'Authentication Failed',
         'Could not create user.  Please check your input and try again.'
       );
+      setIsAuthenticating(false);
     }
-    setIsAuthenticating(false);
   };
 
   if (isAuthenticating) {
